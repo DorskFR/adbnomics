@@ -1,4 +1,4 @@
-from adbnomics import ConcurAsyncGen
+from adbnomics.lib import ConcurAsyncGen
 import time
 import asyncio
 
