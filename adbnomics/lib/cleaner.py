@@ -1,4 +1,4 @@
-from models import CleanedData
+from .models import CleanedData
 import pandas
 
 

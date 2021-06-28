@@ -1,8 +1,6 @@
 import pytest
-from models import CleanedData
-from saver import Saver
-from cleaner import Cleaner
-from mock_api_data import api_data
+from ..lib import Cleaner, CleanedData, Saver
+from .mock_api_data import api_data
 import csv
 
 
@@ -22,8 +20,8 @@ def test_saver_init(saver):
 
 
 def test_saver_to_csv(saver):
-    saver.to_csv(".")
-    with open("test.csv", newline="") as csv_file:
+    saver.to_csv("test.csv", "adbnomics/tests")
+    with open("adbnomics/tests/test.csv", newline="") as csv_file:
         content = csv.reader(csv_file)
         for line in content:
             assert line[0] == "Provider:"

@@ -1,8 +1,8 @@
-from cleaner import Cleaner
-from mock_api_data import api_data
-from models import CleanedData
 import pytest
 from pandas import DataFrame
+
+from ..lib import CleanedData, Cleaner
+from .mock_api_data import api_data
 
 
 @pytest.fixture

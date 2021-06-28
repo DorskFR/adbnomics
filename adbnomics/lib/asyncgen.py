@@ -2,7 +2,7 @@ import asyncio
 import aiohttp
 
 
-class Gatcon:
+class ConcurAsyncGen:
     def __init__(self):
         pass
 

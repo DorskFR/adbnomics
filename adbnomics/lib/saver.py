@@ -1,4 +1,4 @@
-from models import CleanedData
+from .models import CleanedData
 import os
 import csv
 
@@ -8,8 +8,8 @@ class Saver:
         self.data = data
         pass
 
-    def to_csv(self, folder: str = "."):
-        filename = (
+    def to_csv(self, filename: str = None, folder: str = "."):
+        filename = filename or (
             f"{self.data.provider}_{self.data.dataset_code}_{self.data.series_code}.csv"
         )
         file = os.path.join(folder, filename)
