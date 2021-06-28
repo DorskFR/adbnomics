@@ -1,5 +1,5 @@
-Using dbnomics normal module: https://youtu.be/Q1wwFB6OlRI
-Using this: https://youtu.be/5g86gReJ7Sc
+- Using dbnomics normal module: https://youtu.be/Q1wwFB6OlRI
+- Using this: https://youtu.be/5g86gReJ7Sc
 
 """
 What DBNOMICS do:
