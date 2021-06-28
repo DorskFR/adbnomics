@@ -22,6 +22,6 @@ class Cleaner:
 
     def parse_all_series_into_dataframe(self):
         all_dfs = [self.parse_one_series_into_dataframe(series) for series in self.data]
-        self.result.df = pandas.concat(all_dfs)
+        self.result.df = pandas.concat(all_dfs, axis=1)
         self.result.df.index.name = "Date"
         return self.result
