@@ -1,5 +1,6 @@
 from .models import CleanedData
 import pandas
+from .utils import parse_code
 
 
 class Cleaner:
@@ -9,7 +10,7 @@ class Cleaner:
             provider=self.data[0].get("provider_code"),
             dataset_code=self.data[0].get("dataset_code"),
             dataset_name=self.data[0].get("dataset_name"),
-            series_code=self.data[0].get("series_code"),
+            series_code=parse_code(self.data[0].get("series_code")),
             frequency=self.data[0].get("@frequency"),
         )
         self.parse_all_series_into_dataframe()
